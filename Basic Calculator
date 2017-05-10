@@ -1,0 +1,44 @@
+#Simple Calculator that takes input from users does simple two number mathematics
+print('Would you like to do some math? ')
+
+#Takes user input
+answer= input('Yes or No: ')
+
+#If the user answer is Yes then it will process the following script
+if answer == 'Yes':
+    #This will be read after Yes is entered
+    #This will take user input and sent it to the appropritate if/elif
+    math= input('What would you like to do(Add, Subtract, Divide, Multiply): ')
+    
+    #This is the if/elif statement that forms the basis of this program
+    #The users input is taken and runs the if/elif statement related
+    
+    if math == 'Add':
+        num1= input('Enter first number: ')
+        num2= input('Enter Second Number: ')
+        sum = float(num1) + float(num2)
+        print('The sum of {0} and {1} is {2}' .format(num1, num2, sum))
+    
+    elif math == 'Subtract':
+        num3= input('Enter first number: ')
+        num4= input('Enter second number: ')
+        subtract = float(num3) - float(num4)
+        print('{0} minus {1} is {2}' .format(num3, num4, subtract))
+
+    elif math == 'Multiply':
+        num5= input('Enter first number: ')
+        num6= input('Enter second number: ')
+        multiply = float(num5) * float(num6)
+        print('{0} times {1} is {2}' .format(num5, num6, multiply))
+    
+    elif math == 'Divide':
+        num7= input('Enter first number: ')
+        num8= input('Enter second number: ')
+        divide = float(num7) / float(num8)
+        print('{0} divided by {1} is {2}' .format(num7, num8, divide))
+   
+    #After the math problem is complete then this will be ran, terminating the program
+    print('Have a good day!')   
+#On a No command from the user, this will run, terminating the program  
+else:
+    print('Have a good day!')
